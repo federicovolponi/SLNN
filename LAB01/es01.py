@@ -8,7 +8,6 @@ import h5py
 #   - sort the the training set based on the distances to the element (the use of functions like np.argsort is allowed)
 #   - select the top k elements in terms of distance
 #   - evaluate to which class the majority of these k elements belongs to (e.g., it is possible to use the function np.unique with the option return_counts=True and the function np.argmax)
-
 from numpy.core.function_base import linspace
 #Change the path to match the position of your file
 #The Dataset can be loaded using thhe file option in Google Colab (the directory icon on the left)
@@ -23,7 +22,7 @@ accuracy_train = []
 prediction_test = 0
 prediction_train = 0
 n_features = 2
-#Function for calculating euclidean distances (2 dimensions)
+#Function for calculating euclidean distances
 def euclidean_distance(p, q):
   dist = np.sqrt(np.sum(np.square(p - q)))
   return dist
